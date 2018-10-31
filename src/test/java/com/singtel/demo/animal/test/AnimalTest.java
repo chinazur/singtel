@@ -11,6 +11,7 @@ import com.singtel.demo.animal.bird.Chicken;
 import com.singtel.demo.animal.bird.Duck;
 import com.singtel.demo.animal.bird.Parrot;
 import com.singtel.demo.animal.bird.Rooster;
+import com.singtel.demo.animal.fish.Dolphin;
 import com.singtel.demo.animal.fish.Shark;
 import com.singtel.demo.animal.others.Cat;
 
@@ -48,5 +49,10 @@ public class AnimalTest {
 	@Test
 	public void testSharkProperty() {
 		assertEquals("large", new Shark().getSize());
+	}
+	
+	@Test
+	public void testDolphinSwim() {
+		assertEquals("Dolphin is swimming", new Dolphin().swim());
 	}
 }
