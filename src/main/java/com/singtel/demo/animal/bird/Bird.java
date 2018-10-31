@@ -10,4 +10,9 @@ public class Bird extends Animal implements Singable {
 		return "Bird is singing";
 	}
 
+	@Override
+	public String talk() {
+		return this.sing();
+	}
+
 }

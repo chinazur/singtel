@@ -9,7 +9,9 @@ import org.junit.rules.ExpectedException;
 import com.singtel.demo.animal.bird.Bird;
 import com.singtel.demo.animal.bird.Chicken;
 import com.singtel.demo.animal.bird.Duck;
+import com.singtel.demo.animal.bird.Parrot;
 import com.singtel.demo.animal.bird.Rooster;
+import com.singtel.demo.animal.others.Cat;
 
 public class AnimalTest {
 	@Rule
@@ -35,5 +37,10 @@ public class AnimalTest {
 	@Test
 	public void testRoosterSing() {
 		assertEquals("Cock-a-doodle-doo", new Rooster().sing());
+	}
+	
+	@Test
+	public void testParrotLivingWithCatTalk() {
+		assertEquals("Meow", new Parrot(new Cat()).talk());
 	}
 }
