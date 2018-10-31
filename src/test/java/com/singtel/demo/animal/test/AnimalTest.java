@@ -9,6 +9,7 @@ import org.junit.rules.ExpectedException;
 import com.singtel.demo.animal.bird.Bird;
 import com.singtel.demo.animal.bird.Chicken;
 import com.singtel.demo.animal.bird.Duck;
+import com.singtel.demo.animal.bird.Rooster;
 
 public class AnimalTest {
 	@Rule
@@ -29,5 +30,10 @@ public class AnimalTest {
         thrown.expect(Exception.class);
         thrown.expectMessage("Chicken cannot fly");
         new Chicken().fly();
+	}
+	
+	@Test
+	public void testRoosterSing() {
+		assertEquals("Cock-a-doodle-doo", new Rooster().sing());
 	}
 }
