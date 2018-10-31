@@ -7,7 +7,6 @@ public class Bird extends Animal implements Singable {
 
 	@Override
 	public String sing() {
-		// TODO Auto-generated method stub
 		return "Bird is singing";
 	}
 
